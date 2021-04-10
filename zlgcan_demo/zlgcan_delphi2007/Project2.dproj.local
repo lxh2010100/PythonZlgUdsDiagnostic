@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/11/06 14:06:43.599.pas,C:\Users\CAN\Documents\RAD Studio\Projects\Unit2.pas=D:\canfd_delphi\USBCANFD-MINI\Unit2.pas</Transaction>
+    <Transaction>2019/11/06 14:06:43.600.dfm,C:\Users\CAN\Documents\RAD Studio\Projects\Unit2.dfm=D:\canfd_delphi\USBCANFD-MINI\Unit2.dfm</Transaction>
+    <Transaction>2019/11/06 14:06:54.441.dproj,C:\Users\CAN\Documents\RAD Studio\Projects\Project2.dproj=D:\canfd_delphi\USBCANFD-MINI\Project2.dproj</Transaction>
+    <Transaction>2019/11/27 22:15:35.382.pas,D:\致远电子\delphi\USBCANFD-MINI_1126\zlgcan.pas=D:\致远电子\delphi\USBCANFD-MINI_1126\zlgcan_warp.pas</Transaction>
+    <Transaction>2019/12/09 11:35:44.296.pas,D:\canfd_delphi\USBCANFD-MINI_1128_2247(test)\zlgcan_warp.pas=D:\canfd_delphi\USBCANFD-MINI_1128_2247(test)\zlgcan.pas</Transaction>
+  </Transactions>
+</BorlandProject>

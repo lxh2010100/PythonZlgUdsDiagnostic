@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlgcan", "zlgcan\zlgcan.vcproj", "{390DC4C3-28D8-4574-88F6-76C73AC9CF09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{390DC4C3-28D8-4574-88F6-76C73AC9CF09}.Debug|Win32.ActiveCfg = Debug|Win32
+		{390DC4C3-28D8-4574-88F6-76C73AC9CF09}.Debug|Win32.Build.0 = Debug|Win32
+		{390DC4C3-28D8-4574-88F6-76C73AC9CF09}.Release|Win32.ActiveCfg = Release|Win32
+		{390DC4C3-28D8-4574-88F6-76C73AC9CF09}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

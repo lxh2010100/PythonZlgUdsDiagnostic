@@ -1,0 +1,443 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\zlgcan.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\zlgcan.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 zlgcan"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "zlgcan，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2018",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_ZLGCANDEMO_DIALOG DIALOGEX 0, 0, 411, 364
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Zlgcan"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "设备: ",IDC_STATIC,7,9,20,8
+    COMBOBOX        IDC_COMBO_DEVICE,28,8,72,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "设备索引: ",IDC_STATIC,106,9,34,8
+    COMBOBOX        IDC_COMBO_DEVICE_INDEX,142,8,25,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "通道: ",IDC_STATIC,176,9,20,8
+    COMBOBOX        IDC_COMBO_CHANNEL_INDEX,197,8,25,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "参数配置",IDC_STATIC,7,24,397,104
+    LTEXT           "仲裁域波特率: ",IDC_STATIC_A_BAUDRATE,11,53,47,8
+    COMBOBOX        IDC_COMBO_ABIT,58,52,50,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数据域波特率: ",IDC_STATIC_D_BAUDRATE,117,53,48,8
+    COMBOBOX        IDC_COMBO_ABIT2,165,52,50,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "自定义波特率",IDC_CHECK_CUSTOM_BAUDRATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,53,52,10
+    EDITTEXT        IDC_EDIT_CUSTOM_BAUDRATE,284,52,115,14,ES_AUTOHSCROLL
+    LTEXT           "自定义波特率值请使用ZCANPro目录下的baudcal生成",IDC_STATIC_CUSTOM_BAUDRATE,229,38,170,8
+    LTEXT           "模式: ",IDC_STATIC_WORK_MODE,11,36,34,8
+    COMBOBOX        IDC_COMBO_DEVICE_INDEX2,33,35,42,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "验收码(0x): ",IDC_STATIC_ACC_CODE,109,71,39,8
+    EDITTEXT        IDC_EDIT_ACC_CODE,149,70,41,14,ES_AUTOHSCROLL
+    LTEXT           "屏蔽码(0x): ",IDC_STATIC_ACC_MASK,198,71,39,8
+    EDITTEXT        IDC_EDIT_ACC_MASK,238,70,41,14,ES_AUTOHSCROLL
+    GROUPBOX        "数据发送",IDC_STATIC,7,155,397,70
+    LTEXT           "ID(0x): ",IDC_STATIC,12,168,24,8
+    EDITTEXT        IDC_EDIT_FILTER_START2,37,167,41,14,ES_AUTOHSCROLL
+    LTEXT           "帧类型: ",IDC_STATIC,84,168,25,8
+    COMBOBOX        IDC_COMBO_FRAME_TYPE,110,167,36,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "协议: ",IDC_STATIC,153,168,18,8
+    COMBOBOX        IDC_COMBO_PROTOCOL,173,167,36,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "CANFD加速: ",IDC_STATIC,215,168,39,8
+    COMBOBOX        IDC_COMBO_CANFD_EXP,254,167,36,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数据(0x, 以空格隔开): ",IDC_STATIC,12,187,73,8
+    EDITTEXT        IDC_EDIT_FILTER_START3,85,186,312,14,ES_AUTOHSCROLL
+    LTEXT           "发送方式: ",IDC_STATIC_SEND_TYPE,12,207,34,8
+    COMBOBOX        IDC_COMBO_SEND_TYPE,60,206,57,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "发送",IDC_BUTTON_SEND,180,205,50,14
+    PUSHBUTTON      "打开设备",IDC_BUTTON_OPEN,47,134,50,14
+    PUSHBUTTON      "初始化CAN",IDC_BUTTON_INITCAN,113,134,50,14
+    PUSHBUTTON      "启动CAN",IDC_BUTTON_STARTCAN,180,134,50,14
+    PUSHBUTTON      "复位",IDC_BUTTON_RESET,245,134,50,14
+    PUSHBUTTON      "关闭设备",IDC_BUTTON_CLOSE,311,134,50,14
+    GROUPBOX        "数据接收",IDC_STATIC,7,228,397,132
+    LISTBOX         IDC_LIST1,12,240,356,114,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "清空",IDC_BUTTON_CLEAR,372,294,27,14
+    LTEXT           "滤波模式: ",IDC_STATIC_FILTER_MODE,11,70,34,8
+    COMBOBOX        IDC_COMBO_FILTER_MODE,58,69,42,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "工作方式：",IDC_STATIC_NET_MODE,14,97,35,8
+    COMBOBOX        IDC_COMBO_NET_MODE,58,95,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "本地端口：",IDC_STATIC_LOCAL_PORT,154,96,35,8
+    EDITTEXT        IDC_EDIT_LOCAL_PORT,202,94,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "远程地址：",IDC_STATIC_REMOTE_ADDR,16,112,35,8
+    EDITTEXT        IDC_EDIT_REMOTE_ADDR,58,110,78,14,ES_AUTOHSCROLL
+    LTEXT           "远程端口：",IDC_STATIC_REMOTE_PORT,155,111,35,8
+    EDITTEXT        IDC_EDIT_REMOTE_PORT,203,110,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "",IDC_STATIC_SEP,9,88,393,2,WS_BORDER
+    CONTROL         "终端电阻使能",IDC_CHECK_RESISTANCE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,35,57,10
+    LTEXT           "波特率：",IDC_STATIC_BAUD,144,36,28,8
+    COMBOBOX        IDC_COMBO_BAUD,173,34,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_CLOUD DIALOGEX 0, 0, 335, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ZCloud"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,194,160,50,14
+    PUSHBUTTON      "取消",IDCANCEL,267,160,50,14
+    LTEXT           "HTTP地址",IDC_STATIC,16,15,34,8
+    LTEXT           "MQTT地址",IDC_STATIC,16,34,36,8
+    EDITTEXT        IDC_EDIT_HTTP_ADDR,59,14,98,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MQTT_ADDR,59,32,98,14,ES_AUTOHSCROLL
+    LTEXT           "HTTP端口",IDC_STATIC,176,17,34,8
+    LTEXT           "MQTT端口",IDC_STATIC,176,34,36,8
+    EDITTEXT        IDC_EDIT_HTTP_PORT,215,15,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_MQTT_PORT,215,32,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "用户名",IDC_STATIC,18,52,25,8
+    EDITTEXT        IDC_EDIT_USERNAME,49,51,82,14,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,149,52,17,8
+    EDITTEXT        IDC_EDIT_PASSWORD,174,50,82,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "连接",IDC_BUTTON_CONNECT,267,23,50,14
+    PUSHBUTTON      "断开",IDC_BUTTON_DISCONNECT,267,44,50,14
+    CONTROL         "",IDC_LIST_DEVICE,"SysListView32",LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,17,73,300,79
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "zlgcan.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "canmaster.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_ZLGCANDEMO_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 329
+    END
+
+    IDD_DIALOG_CLOUD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_USBCANFDX00UDEMO_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_DEVICE, 0x403, 16, 0
+0x4350, 0x4549, 0x432d, 0x4e41, 0x4446, 0x312d, 0x3030, 0x0055, 
+    IDC_COMBO_DEVICE, 0x403, 16, 0
+0x4350, 0x4549, 0x432d, 0x4e41, 0x4446, 0x322d, 0x3030, 0x0055, 
+    IDC_COMBO_DEVICE, 0x403, 16, 0
+0x4350, 0x4549, 0x432d, 0x4e41, 0x4446, 0x342d, 0x3030, 0x0055, 
+    IDC_COMBO_ABIT, 0x403, 6, 0
+0x4d31, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT, 0x403, 8, 0
+0x3038, 0x6b30, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT, 0x403, 8, 0
+0x3035, 0x6b30, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT, 0x403, 8, 0
+0x3532, 0x6b30, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT2, 0x403, 6, 0
+0x4d38, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT2, 0x403, 6, 0
+0x4d34, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT2, 0x403, 6, 0
+0x4d32, 0x7062, 0x0073, 
+    IDC_COMBO_DEVICE_INDEX2, 0x403, 5, 0
+0xfdd5, 0xa3b3, "\000" 
+    IDC_COMBO_DEVICE_INDEX2, 0x403, 5, 0
+0xbbd6, 0xfdcc, "\000" 
+    IDC_COMBO_FRAME_TYPE, 0x403, 7, 0
+0xeab1, 0xbcd7, 0xa1d6, "\000" 
+    IDC_COMBO_FRAME_TYPE, 0x403, 7, 0
+0xa9c0, 0xb9d5, 0xa1d6, "\000" 
+    IDC_COMBO_PROTOCOL, 0x403, 4, 0
+0x4143, 0x004e, 
+    IDC_COMBO_PROTOCOL, 0x403, 6, 0
+0x4143, 0x464e, 0x0044, 
+    IDC_COMBO_CANFD_EXP, 0x403, 3, 0
+0xf1b7, "\000" 
+    IDC_COMBO_CANFD_EXP, 0x403, 3, 0
+0xc7ca, "\000" 
+    IDC_COMBO_SEND_TYPE, 0x403, 9, 0
+0xfdd5, 0xa3b3, 0xa2b7, 0xcdcb, "\000" 
+    IDC_COMBO_SEND_TYPE, 0x403, 9, 0
+0xd4d7, 0xa2b7, 0xd4d7, 0xd5ca, "\000" 
+    IDC_RESISTANCE, 0x403, 7, 0
+0xabcb, 0xcbc2, 0xa8b2, "\000" 
+    IDC_RESISTANCE, 0x403, 7, 0
+0xa5b5, 0xcbc2, 0xa8b2, "\000" 
+    0
+END
+
+IDD_ZLGCANDEMO_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_DEVICE, 0x403, 8, 0
+0x5355, 0x4342, 0x4e41, 0x0031, 
+    IDC_COMBO_DEVICE, 0x403, 8, 0
+0x5355, 0x4342, 0x4e41, 0x0032, 
+    IDC_COMBO_DEVICE, 0x403, 11, 0
+0x5355, 0x4342, 0x4e41, 0x455f, 0x555f, "\000" 
+    IDC_COMBO_DEVICE, 0x403, 12, 0
+0x5355, 0x4342, 0x4e41, 0x325f, 0x5f45, 0x0055, 
+    IDC_COMBO_DEVICE, 0x403, 15, 0
+0x4350, 0x4549, 0x4143, 0x464e, 0x2d44, 0x3031, 0x5530, "\000" 
+    IDC_COMBO_DEVICE, 0x403, 15, 0
+0x4350, 0x4549, 0x4143, 0x464e, 0x2d44, 0x3032, 0x5530, "\000" 
+    IDC_COMBO_DEVICE, 0x403, 15, 0
+0x4350, 0x4549, 0x4143, 0x464e, 0x2d44, 0x3034, 0x5530, "\000" 
+    IDC_COMBO_DEVICE, 0x403, 14, 0
+0x5355, 0x4342, 0x4e41, 0x4446, 0x322d, 0x3030, 0x0055, 
+    IDC_COMBO_DEVICE, 0x403, 14, 0
+0x5355, 0x4342, 0x4e41, 0x4446, 0x312d, 0x3030, 0x0055, 
+    IDC_COMBO_DEVICE, 0x403, 14, 0
+0x5355, 0x4342, 0x4e41, 0x4446, 0x4d2d, 0x4e49, 0x0049, 
+    IDC_COMBO_DEVICE, 0x403, 10, 0
+0x4143, 0x454e, 0x2d54, 0x4354, 0x0050, 
+    IDC_COMBO_DEVICE, 0x403, 10, 0
+0x4143, 0x454e, 0x2d54, 0x4455, 0x0050, 
+    IDC_COMBO_DEVICE, 0x403, 6, 0
+0x4c43, 0x554f, 0x0044, 
+    IDC_COMBO_ABIT, 0x403, 6, 0
+0x4d31, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT, 0x403, 8, 0
+0x3038, 0x6b30, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT, 0x403, 8, 0
+0x3035, 0x6b30, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT, 0x403, 8, 0
+0x3532, 0x6b30, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT, 0x403, 8, 0
+0x3231, 0x6b35, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT, 0x403, 8, 0
+0x3031, 0x6b30, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT, 0x403, 7, 0
+0x3035, 0x626b, 0x7370, "\000" 
+    IDC_COMBO_ABIT2, 0x403, 6, 0
+0x4d35, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT2, 0x403, 6, 0
+0x4d34, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT2, 0x403, 6, 0
+0x4d32, 0x7062, 0x0073, 
+    IDC_COMBO_ABIT2, 0x403, 6, 0
+0x4d31, 0x7062, 0x0073, 
+    IDC_COMBO_DEVICE_INDEX2, 0x403, 5, 0
+0xfdd5, 0xa3b3, "\000" 
+    IDC_COMBO_DEVICE_INDEX2, 0x403, 5, 0
+0xbbd6, 0xfdcc, "\000" 
+    IDC_COMBO_FRAME_TYPE, 0x403, 7, 0
+0xeab1, 0xbcd7, 0xa1d6, "\000" 
+    IDC_COMBO_FRAME_TYPE, 0x403, 7, 0
+0xa9c0, 0xb9d5, 0xa1d6, "\000" 
+    IDC_COMBO_PROTOCOL, 0x403, 4, 0
+0x4143, 0x004e, 
+    IDC_COMBO_PROTOCOL, 0x403, 6, 0
+0x4143, 0x464e, 0x0044, 
+    IDC_COMBO_CANFD_EXP, 0x403, 3, 0
+0xf1b7, "\000" 
+    IDC_COMBO_CANFD_EXP, 0x403, 3, 0
+0xc7ca, "\000" 
+    IDC_COMBO_SEND_TYPE, 0x403, 9, 0
+0xfdd5, 0xa3b3, 0xa2b7, 0xcdcb, "\000" 
+    IDC_COMBO_SEND_TYPE, 0x403, 9, 0
+0xa5b5, 0xceb4, 0xa2b7, 0xcdcb, "\000" 
+    IDC_COMBO_SEND_TYPE, 0x403, 9, 0
+0xd4d7, 0xa2b7, 0xd4d7, 0xd5ca, "\000" 
+    IDC_COMBO_FILTER_MODE, 0x403, 7, 0
+0xabcb, 0xcbc2, 0xa8b2, "\000" 
+    IDC_COMBO_FILTER_MODE, 0x403, 7, 0
+0xa5b5, 0xcbc2, 0xa8b2, "\000" 
+    IDC_COMBO_NET_MODE, 0x403, 7, 0
+0xfeb7, 0xf1ce, 0xf7c6, "\000" 
+    IDC_COMBO_NET_MODE, 0x403, 7, 0
+0xcdbf, 0xa7bb, 0xcbb6, "\000" 
+    IDC_COMBO_BAUD, 0x403, 6, 0
+0x4d31, 0x7062, 0x0073, 
+    IDC_COMBO_BAUD, 0x403, 8, 0
+0x3038, 0x6b30, 0x7062, 0x0073, 
+    IDC_COMBO_BAUD, 0x403, 8, 0
+0x3035, 0x6b30, 0x7062, 0x0073, 
+    IDC_COMBO_BAUD, 0x403, 8, 0
+0x3532, 0x6b30, 0x7062, 0x0073, 
+    IDC_COMBO_BAUD, 0x403, 8, 0
+0x3231, 0x6b35, 0x7062, 0x0073, 
+    IDC_COMBO_BAUD, 0x403, 8, 0
+0x3031, 0x6b30, 0x7062, 0x0073, 
+    IDC_COMBO_BAUD, 0x403, 7, 0
+0x3035, 0x626b, 0x7370, "\000" 
+    IDC_COMBO_BAUD, 0x403, 7, 0
+0x3032, 0x626b, 0x7370, "\000" 
+    IDC_COMBO_BAUD, 0x403, 7, 0
+0x3031, 0x626b, 0x7370, "\000" 
+    IDC_COMBO_BAUD, 0x403, 6, 0
+0x6b35, 0x7062, 0x0073, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 zlgcan(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\zlgcan.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
